@@ -19,7 +19,7 @@ student["age"] = int(input_age)
 students.append(student)
 print(students)"""
 
-students = []
+"""students = []
 for i in range(3):
     student = {}
     input_name = input("name: ")
@@ -30,5 +30,14 @@ for i in range(3):
 print(students)    
 for student in students:
     if student["age"] > 20:
-        print(student["name"] + " is older than rest of the students.")
+        print(student["name"] + " is older than rest of the students.")"""
 
+students = [
+    {"name": "Pratik", "age": 20},
+    {"name": "Rahul", "age": 22},
+    {"name": "Amit", "age": 20}
+]
+students[2]["age"] = 25
+for student in students:
+    if student["age"] > 20:
+        print(student["name"])
